@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "ZeroKit"
+  spec.name         = "ZooKit"
   spec.version      = "0.0.1"
   spec.summary      = "Swift开发中一些常用的扩展、基类、工具等"
 
