@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
     public convenience init(_ hexValue: Int, alpha: CGFloat = 1.0) {
         let redValue   = CGFloat((hexValue & 0xFF0000) >> 16) / 255.0

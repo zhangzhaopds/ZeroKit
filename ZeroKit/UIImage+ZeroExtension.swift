@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     
     public enum GradientDirection {
         case horizontal
