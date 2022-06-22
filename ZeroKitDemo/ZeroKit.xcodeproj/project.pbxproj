@@ -16,8 +16,6 @@
 		0621AD352862C65000244A60 /* ZeroKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621AD342862C65000244A60 /* ZeroKitTests.swift */; };
 		0621AD3F2862C65000244A60 /* ZeroKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621AD3E2862C65000244A60 /* ZeroKitUITests.swift */; };
 		0621AD412862C65000244A60 /* ZeroKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621AD402862C65000244A60 /* ZeroKitUITestsLaunchTests.swift */; };
-		0621AD4F2862D09C00244A60 /* UIColor+ZeroExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621AD4E2862D09C00244A60 /* UIColor+ZeroExtension.swift */; };
-		0621AD512862D0DA00244A60 /* UIFont+ZeroExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621AD502862D0DA00244A60 /* UIFont+ZeroExtension.swift */; };
 		A6BE648DD79E58558BB34027 /* Pods_ZeroKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645FE3B5F91FEB2B3C9E1033 /* Pods_ZeroKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +50,6 @@
 		0621AD3A2862C65000244A60 /* ZeroKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0621AD3E2862C65000244A60 /* ZeroKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroKitUITests.swift; sourceTree = "<group>"; };
 		0621AD402862C65000244A60 /* ZeroKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0621AD4E2862D09C00244A60 /* UIColor+ZeroExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ZeroExtension.swift"; sourceTree = "<group>"; };
-		0621AD502862D0DA00244A60 /* UIFont+ZeroExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+ZeroExtension.swift"; sourceTree = "<group>"; };
 		4F45A5BE17A5D562F7E23A80 /* Pods-ZeroKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroKit.debug.xcconfig"; path = "Target Support Files/Pods-ZeroKit/Pods-ZeroKit.debug.xcconfig"; sourceTree = "<group>"; };
 		5073FEC5EFDCA47755784C22 /* Pods-ZeroKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroKit.release.xcconfig"; path = "Target Support Files/Pods-ZeroKit/Pods-ZeroKit.release.xcconfig"; sourceTree = "<group>"; };
 		645FE3B5F91FEB2B3C9E1033 /* Pods_ZeroKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeroKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +106,6 @@
 		0621AD1C2862C64B00244A60 /* ZeroKit */ = {
 			isa = PBXGroup;
 			children = (
-				0621AD4D2862D01000244A60 /* kit */,
 				0621AD1D2862C64B00244A60 /* AppDelegate.swift */,
 				0621AD1F2862C64B00244A60 /* SceneDelegate.swift */,
 				0621AD212862C64B00244A60 /* ViewController.swift */,
@@ -137,15 +132,6 @@
 				0621AD402862C65000244A60 /* ZeroKitUITestsLaunchTests.swift */,
 			);
 			path = ZeroKitUITests;
-			sourceTree = "<group>";
-		};
-		0621AD4D2862D01000244A60 /* kit */ = {
-			isa = PBXGroup;
-			children = (
-				0621AD4E2862D09C00244A60 /* UIColor+ZeroExtension.swift */,
-				0621AD502862D0DA00244A60 /* UIFont+ZeroExtension.swift */,
-			);
-			path = kit;
 			sourceTree = "<group>";
 		};
 		247EB4507526A8193271626F /* Pods */ = {
@@ -342,9 +328,7 @@
 			files = (
 				0621AD222862C64B00244A60 /* ViewController.swift in Sources */,
 				0621AD1E2862C64B00244A60 /* AppDelegate.swift in Sources */,
-				0621AD512862D0DA00244A60 /* UIFont+ZeroExtension.swift in Sources */,
 				0621AD202862C64B00244A60 /* SceneDelegate.swift in Sources */,
-				0621AD4F2862D09C00244A60 /* UIColor+ZeroExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
