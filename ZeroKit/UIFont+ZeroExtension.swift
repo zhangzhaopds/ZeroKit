@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UIFont {
+extension UIFont {
     
     /// "PingFangSC-Regular"
     public static func regularFont(ofSize fontSize: CGFloat) -> UIFont {

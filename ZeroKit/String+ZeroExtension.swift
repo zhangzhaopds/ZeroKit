@@ -9,7 +9,7 @@ import UIKit
 import CommonCrypto
 
 // MARK: - 作为错误
-public extension String {
+extension String {
     
     private struct ConvenientError: LocalizedError {
         
@@ -24,15 +24,15 @@ public extension String {
         }
     }
     
-    var asError: LocalizedError {
+    public var asError: LocalizedError {
         return ConvenientError(self)
     }
 }
 
 // MARK: - 数字签名/加密
-public extension String {
+extension String {
     
-    var MD5: String {
+    public var MD5: String {
         let cStr = cString(using: .utf8)!
         let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16)
         CC_MD5(cStr, (CC_LONG)(strlen(cStr)), buffer)
@@ -44,7 +44,7 @@ public extension String {
         return md5Result
     }
     
-    func HmacSHA1(_ key: String) -> String {
+    public func HmacSHA1(_ key: String) -> String {
         let cKey = key.cString(using: .ascii)!
         var charactsets: CharacterSet = .urlUserAllowed
         charactsets.remove(charactersIn: ":/,()")
@@ -59,7 +59,7 @@ public extension String {
         return HmacResult
     }
 
-    func AES128Encryption(iv: String, key: String) -> Data? {
+    public func AES128Encryption(iv: String, key: String) -> Data? {
         guard
             iv.count == 16,
             key.count == 16,
@@ -103,9 +103,9 @@ public extension String {
 }
 
 // MARK: - IP地址判断
-public extension String {
+extension String {
     
-    func isIPAddress() -> Bool {
+    public func isIPAddress() -> Bool {
         guard count > 0 else { return false }
         let ipv4Regex = "^(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)(\\.(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}$"
         let isIPv4 = NSPredicate(format: "SELF MATCHES %@", ipv4Regex).evaluate(with: self)
@@ -133,9 +133,9 @@ public extension String {
 }
 
 // MARK: - 拼音
-public extension String {
+extension String {
     
-    var toPinYin: String {
+    public var toPinYin: String {
         let py = NSMutableString(string: self) as CFMutableString
         CFStringTransform(py, nil, kCFStringTransformMandarinLatin, false)
         CFStringTransform(py, nil, kCFStringTransformStripDiacritics, false)
