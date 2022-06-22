@@ -66,6 +66,7 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios
   spec.platform     = :ios, "11.0"
+  spec.swift_versions = "5.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -116,7 +117,7 @@ Pod::Spec.new do |spec|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-  swift_versions = "5.0"
+
   spec.ios.frameworks = 'Foundation', 'UIKit'
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
