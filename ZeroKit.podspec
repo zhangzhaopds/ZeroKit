@@ -116,6 +116,7 @@ Pod::Spec.new do |spec|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
+  swift_versions = "5.0"
   spec.ios.frameworks = 'Foundation', 'UIKit'
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
